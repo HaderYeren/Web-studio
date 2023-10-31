@@ -51,6 +51,7 @@
       line-height: normal;
       letter-spacing: 0.28px;
       display: flex;
+  
       
   }
   .header-list-item:not(:last-child){
@@ -118,7 +119,7 @@
   }
   
   .post{
-   background: var(--secondary-background-color);  
+   background-image: url(../imges/Imgfon.png); 
    padding-top: 200px;
    padding-bottom: 200px;
   }
@@ -148,6 +149,9 @@
       margin: 0 auto;
       text-align: center;
       font-family: 'Roboto';
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
   }
   /*benefits*/
   .benefits{
@@ -164,12 +168,53 @@
   .benefits-block:not(:last-child){
       margin-right: 30px;
   }
-  .benefits-img{
+  .benefits-letter-one::before{
+      content: '';
+      display: block;
       background-color: var(--background-team-color);
       width: 270px;
       height: 120px;
       margin-bottom: 30px;
       border-radius: 4px;
+      background-image: url(../imges/benefitsimg1.png);
+      background-repeat:no-repeat ;
+      background-position: center;
+  }
+  .benefits-letter-two::before{
+      content: '';
+      display: block;
+      background-color: var(--background-team-color);
+      width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+      background-image: url(../imges/benefitsimg2.png);
+      background-repeat:no-repeat ;
+      background-position: center;
+  }
+  .benefits-letter-three::before{
+      content: '';
+      display: block;
+      background-color: var(--background-team-color);
+      width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+      background-image: url(../imges/benefitsimg3.png);
+      background-repeat:no-repeat ;
+      background-position: center;
+  }
+  .benefits-letter-four::before{
+      content: '';
+      display: block;
+      background-color: var(--background-team-color);
+      width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+      background-image: url(../imges/benefitsimg4.png);
+      background-repeat:no-repeat ;
+      background-position: center;
   }
   .benefits-name{
       color: var(--title-text-color);
@@ -322,8 +367,22 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
+  margin-top: 20px;
+  margin-bottom: 9px;
+  
   }
-  .address-link{
+  .footer-email{
+      color: rgba(255, 255, 255, 0.60);
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  margin-bottom: 9px;
+  
+  }
+  .footer-tel{
       color: rgba(255, 255, 255, 0.60);
   font-family: 'Roboto';
   font-size: 14px;
@@ -332,6 +391,7 @@
   line-height: 24px;
   letter-spacing: 0.42px;
   }
+  
   .footer-div{
       margin-left: 70px;
       display: flex;
@@ -354,3 +414,286 @@
   .footer-item:not(:last-child){
   padding-right: 34px;
   }
+  :root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --second-text-color: #FFFFFF;
+    --background-button-color: #2196F3;
+    --background-team-color: #F5F4FA;
+    --logo-color: #000;
+    --secondary-background-color: #2F303A;
+    --border-color: #EEE;  
+  }
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--title-text-color);
+}
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Logotype*/
+.header-logo{
+    color: var(--logo-color);
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    text-decoration: none;
+}
+.logo-blue{
+    color: var(--background-button-color);
+}
+
+.header-list{
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    display: flex;
+    
+}
+.header-list-item:not(:last-child){
+    margin-right: 50px;
+}
+.header-list:hover{
+    color: var(--background-button-color);
+}
+
+.header-link-one{
+    font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
+color: var(--background-button-color);
+}
+.header-link{
+    text-decoration: none;
+    color: var(--title-text-color);
+    font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
+}
+.header-link:hover,
+.header-link:focus{
+    color: var(--background-button-color);
+    
+}
+/*Contacts*/
+.contacts-list{
+    padding-left: 344px ;
+    display: flex;
+    
+}
+.contacts-list-item{
+    display: flex;
+}
+.img-email{
+    padding-right: 10px;
+}
+.email{
+    color: var(--background-button-color);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    
+}
+.telephone{
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
+margin-left: 50px;
+}
+
+/*Кнопка "Усі"*/
+.button-one{
+   background: var(--background-button-color);
+   color: var(--second-text-color);
+   border-radius: 4px;
+   border: none;
+text-align: center;
+font-family: 'Roboto';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0.48px;
+padding: 6px 25px;
+cursor: pointer;
+
+}
+/*Інші кнопки*/
+.button-list{
+    padding-bottom: 50px;
+    padding-top: 94px;
+    padding-left: 300px;
+    display: flex;
+}
+.button-list-item{
+    padding: 8px;
+    
+}
+.button{
+    border-radius: 4px;
+background-color: var(--background-team-color);
+color: var(--button-color);
+border: none;
+text-align: center;
+font-family: 'Roboto';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0.48px;
+padding: 8px;
+cursor: pointer;
+}
+.button:hover{
+    background-color: var(--background-button-color);
+    color: var(--second-text-color);
+}
+/*Картинки*/
+.section{
+    padding-bottom: 94px;
+}
+.block-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.block-item{
+    width: 370px;
+border: 1px solid var(--border-color);
+background-color: var(--second-text-color);
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+margin-bottom: 30px;
+}
+
+.block-img{
+    width: 100%;
+}
+/*Заголовки карток*/
+.block-title{
+    color: var(--button-color);
+    font-family: 'Roboto';
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 1.08px;
+padding-bottom: 4px;
+padding-top: 20px;
+padding-left: 24px;
+}
+/*Текст карток*/
+.block-text{
+    color: var(--block-text-color);
+    font-family: 'Roboto';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.48px;
+padding-left: 24px;
+margin-bottom: 20px;
+}
+/*Footer*/
+.footer{
+    background-color: var(--secondary-background-color);
+    padding-top: 94px;
+    padding-bottom: 60px;
+    display: flex;
+}
+.footer-dates{
+    display: flex;
+    flex-direction: column;
+}
+.logo-white{
+    color: var(--second-text-color);
+}
+.address-div{
+    display: flex;
+    flex-direction: column;
+}
+.address-text{
+    color: var(--second-text-color);
+    font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+margin-top: 20px;
+margin-bottom: 9px;
+
+}
+.footer-email{
+    color: rgba(255, 255, 255, 0.60);
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+margin-bottom: 9px;
+
+}
+.footer-tel{
+    color: rgba(255, 255, 255, 0.60);
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+}
+.footer-div{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-title{
+    color: var(--second-text-color);
+    font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.footer-list{
+    display: flex;
+    padding-top: 32px;
+}
+.footer-item:not(:last-child){
+padding-right: 34px;
+}
