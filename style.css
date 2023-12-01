@@ -260,7 +260,16 @@
   }
   .activity-imges{
       width: 370px;
+      /* height: 294px; */
   }
+  .rama-images{
+    color: white;
+    font-family: Roboto;
+    width: 156px;
+    height: 16px;
+    
+  }
+  
   /*Team*/
   .team{
       padding-top: 94px;
