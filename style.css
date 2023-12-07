@@ -720,3 +720,12 @@ align-items: center;
 .email:hover .contact-aicon{
     fill: var(--background-button-color);
 }
+.contacts-list-item .email:hover{
+    color: var(--background-button-color);
+}
+.telephone:hover .contact-aicon{
+    fill: var(--background-button-color);
+}
+.contacts-list-item .telephone:hover{
+    color: var(--background-button-color);
+}
