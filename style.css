@@ -119,9 +119,12 @@
   }
   
   .post{
-   background-image: url(../imges/Imgfon.png); 
+   background-image: url(./images/bg.png); 
    padding-top: 200px;
    padding-bottom: 200px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
   }
   .post-title{
       color: var(--second-text-color);
@@ -260,7 +263,7 @@
   }
   .activity-imges{
       width: 370px;
-      /* height: 294px; */
+      height: 294px;
   }
   .rama-images{
     color: white;
@@ -521,7 +524,7 @@ letter-spacing: 0.28px;
     padding-right: 10px;
 }
 .email{
-    color: var(--background-button-color);
+    color: var(--primary-text-color);
     font-family: 'Roboto';
     font-size: 14px;
     font-style: normal;
@@ -705,4 +708,15 @@ text-transform: uppercase;
 }
 .footer-item:not(:last-child){
 padding-right: 34px;
+}
+.email, .telephone{
+display: flex;
+align-items: center;
+}
+.contact-aicon{
+    fill: var(--primary-text-color);
+    margin-right: 10px;
+}
+.email:hover .contact-aicon{
+    fill: var(--background-button-color);
 }
