@@ -15,7 +15,7 @@
       margin: 0 auto;
   }
   body{
-      padding: 0 215px;
+      padding: 0 15px;
       color: var(--primary-text-color);
   background-color: var(--second-text-color);
   font-size: 14px;
@@ -87,8 +87,8 @@
   }
   /*Contacts*/
   .contacts-list{
-      padding-left: 344px ;
       display: flex;
+      width: 340px;
       
   }
   .contacts-list-item{
@@ -426,37 +426,6 @@
   .footer-item:not(:last-child){
   padding-right: 34px;
   }
-  :root{
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --second-text-color: #FFFFFF;
-    --background-button-color: #2196F3;
-    --background-team-color: #F5F4FA;
-    --logo-color: #000;
-    --secondary-background-color: #2F303A;
-    --border-color: #EEE;  
-  }
-.container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-a{
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--title-text-color);
-}
-.header{
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-.header-wraper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 /*Logotype*/
 .header-logo{
     color: var(--logo-color);
@@ -513,7 +482,6 @@ letter-spacing: 0.28px;
 }
 /*Contacts*/
 .contacts-list{
-    padding-left: 344px ;
     display: flex;
     
 }
