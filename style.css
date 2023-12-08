@@ -7,6 +7,7 @@
     --logo-color: #000;
     --secondary-background-color: #2F303A; 
     --border-color: #AFB1B8; 
+    --time-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .container{
       width: 1200px;
@@ -718,4 +719,62 @@ left: 0;
 width: 100%;
 height: 70px;
 font-family: 'Roboto', sans-serif;
+}
+.social-list-aicon{
+    width: 20px;
+    height: 20px;
+
+}
+.team-img-list-item{
+    fill: var(--primary-text-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
+}
+.team-img-list-item:hover, .team-img-list-item:focus{
+fill: var(--second-text-color);
+background-color: var(--background-button-color);
+}
+.footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--second-text-color);
+    transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
+    margin-right: 8px;
+}
+.footer-item:hover, .footer-item:focus{
+    background-color: var(--background-button-color);
+}
+.clains-link{
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    fill: var(--primary-text-color);
+    transition: fill 250ms var(--time-function), border-color 250ms var(--time-function);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clains-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.clains{
+    padding-top: 94px;
+    padding-bottom: 94px
+}
+.clains-link:hover, .clains-link:focus{
+    fill: var(--background-button-color);
+    border-color: var(--background-button-color);
 }
