@@ -799,7 +799,7 @@ background-color: var(--background-button-color);
     transform: translate(-50%, -50%);
     min-width: 528px;
     min-height: 581px;
-    background-color: var(--primary-background-color);
+    background-color: var(--second-text-color);
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -809,24 +809,25 @@ background-color: var(--background-button-color);
     margin-left: 490px;
     width: 30px;
     height: 30px;
-    background-color: var(--primary-background-color);
+    background-color: var(--second-text-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 50%;
-    background-image: url(./images/icons.svg#icon-close);
+    background-image: url(../images/symbol-defs.svg#icon-close);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
+    fill: var(--secondary-background-color);
   }
   .modal-icon {
-    fill: currentColor;
+    fill: var(--title-text-color);
     align-items: center;
   }
   .modal-icon:hover,
   .modal-icon:focus {
-    color: var(--accent-color);
+    color: var(--background-button-color);
   }
   
   /*FORM MODAL WINDOW*/
@@ -834,6 +835,7 @@ background-color: var(--background-button-color);
     width: 528px;
     padding-right: 40px;
     padding-left: 40px;
+    font-family: 'Roboto',sans-serif;
   }
   .modal-form-title {
     font-weight: 700;
@@ -841,7 +843,7 @@ background-color: var(--background-button-color);
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--secondary-background-color);
+    color: var(--title-text-color);
     margin-bottom: 12px;
   }
   .modal-form-label {
@@ -886,7 +888,7 @@ background-color: var(--background-button-color);
   }
   .comment:focus {
     outline: none;
-    border-color: var(--accent-color);
+    border-color: var(--background-button-color);
   }
   .comment::placeholder {
     font-size: 14px;
@@ -896,10 +898,10 @@ background-color: var(--background-button-color);
   }
   .form-input:focus {
     outline: none;
-    border-color: var(--accent-color);
+    border-color: var(--background-button-color);
   }
   .form-input:focus + .modal-form-icon {
-    fill: var(--accent-color);
+    fill: var(--background-button-color);
   }
   .modal-form-policy {
     display: flex;
@@ -916,13 +918,14 @@ background-color: var(--background-button-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
+    font-family:'Roboto',sans-serif;
   }
   .modal-form-policy-icon {
     content: "";
     width: 16px;
     height: 15px;
-    border: 2px solid var(--title-text-color);
+    border: 2px solid var(--second-text-color);
     border-radius: 2px;
     cursor: pointer;
   }
@@ -933,14 +936,14 @@ background-color: var(--background-button-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
-    color: var(--accent-color);
+    color: var(--background-button-color);
   }
   .agree-btn {
     padding: 10px 30px;
     min-width: 200px;
     text-align: center;
-    color: var(--primary-background-color);
-    background-color: var(--accent-color);
+    color: var(--second-text-color);
+    background-color: var(--background-button-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -953,6 +956,6 @@ background-color: var(--background-button-color);
   }
   .agree-btn:hover,
   .agree-btn:focus {
-    background-color: var(--primary--button-color);
+    background-color: var(--background-button-color);
   }
   
