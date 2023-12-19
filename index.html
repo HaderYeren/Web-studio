@@ -279,7 +279,9 @@
     </div>
 </section>
 </main>
-<footer class="footer container">
+<footer class="footer">
+    <div class="container footer-wrap">
+
     <div class="footer-dates">
     <a class="header-logo" href="./index.html">
         <span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
@@ -315,6 +317,24 @@
             </svg>
         </li>
     </ul>
+</div>
+<div class="footer-form-box">
+    <footer class="footer-form">
+        <h4 class="footer-form-title">
+            Підпишіться на розсилку
+        </h4>
+        <div class="label-footer-form">
+            <label for="email">
+                <input class="footer-input" type="email" placeholder="E-mail" required pattern="[A-Za-z]{6,}">
+            </label>
+            <button class="btn-subscribe" type="submit">Підписатися
+                <svg class="icon-telegram" width="24px" height="24px">
+                    <use href="img/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+            </button>
+        </div>
+    </footer>
+</div>
 </div>
 </footer>
 <script src="./modal.js"></script>
