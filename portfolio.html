@@ -13,38 +13,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header container">
-        <div class="header-wraper">
-            <a class="header-logo" href="./index.html">
-                <span class="logo-blue">Web</span>Studio</a>
-        <nav class="header-nav">
-        <ul class="header-list">
-        <li class="header-list-item">
-            <a class="header-link" href="./index.html">Студія</a>
-        </li>
-        <li class="header-list-item">
-            <a class="header-link-one" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="header-list-item">
-            <a class="header-link" href="#">Контакти</a>
-        </li>
-    </ul>
-    </nav>
-        <ul class="contacts-list">
-     <li class="contacts-list-item">
-        <div>
-            <img class="img-email" src="imges/email(hover).png" alt="">
+    <header class="header">
+        <div class="container header-wraper">
+            <a class="header-logo" href="./index.html"> <span class="logo-blue">Web</span>Studio</a>
+            <nav class="header-nav"> 
+                <ul class="header-list">
+                    <li class="header-list-item"><a href="./index.html" class="header-link">Студия</a></li>
+                    <li class="header-list-item"><a href="./portfolio.html" class="header-link-one">Портфолио</a></li>
+                    <li class="header-list-item"><a href="/Контакты" class="header-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts-list">
+                <li class="contacts-list-item">
+                    <a href="mailto:info@devstudio.com" class="email">
+                        <svg width="16px" height="12px" class="contact-aicon">
+                            <use href="./images/symbol-defs.svg#icon-email">
+                            </use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts-list-item">
+                    <a href="tel:+380961111111" class="telephone">
+                        <svg width="12px" height="16px" class="contact-aicon">
+                            <use href="./images/symbol-defs.svg#icon-phone">
+                            </use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
-        <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-    </li>
-    <li class="contacts-list-item">
-        <a class="telephone" href="tel:+380961111111">+38 096 111 11 11</a>
-    </li>
-    </ul>
-    </div>
-       </header> 
-   <main class="main container">
+    </header> 
+   <main class="main">
     <section class="section">
+        <div class="container">
 <ul class="button-list">
     <li class="button-list-item">
         <button class="button-one" type="button">Усі</button>
@@ -109,6 +112,7 @@
         <p class="block-text">Додаток</p>
     </li>
 </ul>
+</div>
 </section>
    </main>
    <footer class="footer">
@@ -135,7 +139,7 @@
         </li>
         <li class="footer-item">
             <svg class="social-list-aicon">
-                <use href="./images/symbol-defs.svg#icon-twitter-1-2-1"></use>
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
             </svg>
         </li>
         <li class="footer-item">
